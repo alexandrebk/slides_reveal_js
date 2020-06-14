@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Lyon.rb</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css" id="theme">
+    <link href='favicon.png' rel='shortcut icon'>
+    <link href='favicon.ico' rel='icon' type='image/ico'>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <a href="https://revealjs.com">
+
+          </a>
+          <h2>Admin Interface Feedback</h2>
+          <p>
+            Created by <a href="http://www.alexandrebouvier.fr/">Alexandre Bouvier</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Pain</h2>
+          <ol>
+            <li>Comment gérer ses données simplement</li>
+            <li>Créer un accès aux données pour le client</li>
+            <li>Externaliser les taches les plus simples au client</li>
+            <li>CRUD sans la console</li>
+            <li>... et plein d'autres choses</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Solution</h2>
+          <p>
+            Une interface admin <br>
+            <a href="http://www.alexandrebouvier.fr/">www.monsite.fr/admin</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Existing gem</h2>
+          <ol>
+            <li>Forest Admin</li>
+            <li>Active Admin</li>
+            <li>Rails Admin</li>
+            <li>Administrate by Thoughtbot</li>
+          </ol>
+        </section>
+
+        <section>
+          <section>
+            <h2>FOREST ADMIN</h2>
+            <p>
+              Dashboard, KPIs, LiveQuery and customs Actions <br>
+            </p>
+            <p>
+              BUT ... skip validation model 😱
+            </p>
+          </section>
+
+          <section>
+            <h2>FOREST ADMIN</h2>
+            <p>
+              Also hard to install...
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Rails ADMIN</h2>
+          <p>
+            ...
+          </p>
+        </section>
+
+        <section>
+          <h2>Active admin</h2>
+          <p>
+            ...
+          </p>
+        </section>
+
+        <section>
+          <section>
+            <h2>Administrate by Thoughbot</h2>
+            <p>
+              Many features and aweseome documentation
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Create your own admin space</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+              namespace :advanced_admin do
+                resources :yousign
+                resources :trello
+                resources :crm
+              end
+            </code></pre>
+          </section>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
